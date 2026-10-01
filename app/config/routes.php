@@ -56,6 +56,7 @@ $router->get('/refresh', 'MigrationController::refresh');
 $router->get('/status', 'MigrationController::status');
 
 // Product API Routes
+$router->get('/api', 'ApiController::index');
 $router->post('/api/login', 'AuthController::login');
 $router->post('/api/register', 'AuthController::register');
 $router->options('/api/login', 'AuthController::login');
