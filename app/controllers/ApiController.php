@@ -13,7 +13,8 @@ class ApiController extends Controller
     {
         $this->api->respond([
             'name' => 'LavaLust Product Management API',
-            'status' => 'online',
+            'status' => 'ok',
+            'message' => 'LavaLust API is running',
             'endpoints' => [
                 'login' => '/api/login',
                 'register' => '/api/register',
