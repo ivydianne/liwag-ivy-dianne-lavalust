@@ -12,6 +12,9 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'GET') {
 	$api_messages = [
 		'/api/login' => 'Use POST /api/login with JSON fields username and password.',
 		'/api/register' => 'Use POST /api/register with JSON fields username, email, and password.',
+		'/api/logout' => 'Use POST /api/logout with a JSON refresh_token.',
+		'/api/refresh' => 'Use POST /api/refresh with a JSON refresh_token.',
+		'/api/profile' => 'Use GET /api/profile with a Bearer access token.',
 	];
 
 	if (isset($api_messages[$api_path])) {
